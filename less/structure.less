@@ -1,0 +1,45 @@
+* {
+	margin-top: 0;
+}
+
+body {
+	font-family: @bodyFont;
+	background-color: #f5fad5;
+}
+
+.container {
+	min-height: 100px;
+	margin: @contentMargin;
+	max-width: @contentWidth;
+	width: @contentSetWidth;
+	background-color: @contentBackground;
+	.rounded(@radius: 20px);
+	border: solid #452109 3px;
+}
+#stuff {
+
+}
+
+h1 {
+	color: @h1Color;
+}
+
+#rotate {
+	margin-top: 10px;
+	padding: 20px;
+	color: #452109;
+	min-height: 400px;
+	overflow: auto;
+
+	p {
+		width: 80%;
+		float: left;
+	}
+	img {
+		float: right;
+		.rounded(@radius:150px;);
+	}
+
+}
+
+

@@ -1,0 +1,60 @@
+nav {
+	text-align: center
+	padding: 10%;
+	.rounded(60px);
+	width: @navWidth;
+	margin-top: 1em;
+	margin-left: 32%;
+	overflow: visible;
+
+	
+	a {
+
+		-moz-box-shadow: -3px -3px -3px;
+		-webkit-box-shadow: -3px -3px -3px;
+		box-shadow: -3px -3px -3px;
+		-webkit-transition: .15s ease-in-out;
+		-moz-transition: .15s ease-in-out;
+		transition: .15s ease-in-out;
+		display: inline-block;
+		white-space: nowrap;
+		.navButton(@navButtonColor, 50px, 20px);
+		padding: @navPadding;
+		color: @linkColor;
+		text-decoration: @navDecoration;
+		margin: @navMargin;
+		&:hover {
+			color: @hoverColor;
+			-moz-box-shadow: 3px 3px 3px;
+			-webkit-box-shadow: 3px 3px 3px;
+			box-shadow: 3px 3px 3px;
+		}
+		&:visited {
+			color: @visitedColor;
+		}
+	}	
+}
+@media only screen and (max-device-width : @smallSmartphone), only screen and (max-width : 750px){
+	nav {
+	
+		a {
+		display: inline-block;
+		white-space: nowrap;
+		.navButton(@navButtonColor, 50px, 20px);
+		padding: 6px;
+		color: @linkColor;
+		text-decoration: @navDecoration;
+		margin: 3px;
+		//text-align: center;
+		}  
+		
+		
+}
+}
+
+@media only screen and (max-device-width : 485), only screen and (max-width : 510px){
+	nav {
+		width: 220px;
+		margin-left: 5em;
+	}
+}
